@@ -16,7 +16,7 @@ export const Login = (props) => {
     if (email && pass) {
       console.log("Email: ", email, "\nPassword: ", pass);
     }
-    if (email === "marthur@gmail.com" && pass === "abc123") {
+    if (email === "mickeyarthur@gmail.com" && pass === "abc123") {
       alert("Login Succussfully");
       navigate("/home");
     } else {
@@ -31,7 +31,7 @@ export const Login = (props) => {
         <h2>Login</h2>
         <form className="loginForm" onSubmit={handleSubmit}>
             <label htmlFor="email">Email</label>
-            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" name="email" placeholder="abc@email.com" />
+            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" name="email" placeholder="example@email.com" />
             <label htmlFor="password">Password</label>
             <input value={pass} onChange={(e) => setPassword(e.target.value)} type="password" id="password" name="password" placeholder="***************" />
             <button type="submit">Login</button>
